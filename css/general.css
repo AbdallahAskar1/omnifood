@@ -64,7 +64,7 @@ body {
     margin-bottom: 9.6rem;
    
 }
-.grid:not(:last-child) {
+.grid:last-child {
     margin-bottom: 0;
 } 
 .grid-two-cols {
@@ -77,6 +77,11 @@ body {
 .grid-four-cols {
     grid-template-columns: repeat(4,1fr);
 }
+
+.grid-five-cols {
+    grid-template-columns: repeat(5,1fr);
+}
+
 .grid-center-v {
     align-items: center;
 }
@@ -116,15 +121,20 @@ body {
 }
 
 
+.btn,
 .btn:link, btn:visited {
-
+    display: inline-block;
     padding: 1.6rem 3.2rem;
     border-radius: 9px;
     font-size: 1.9rem;
     font-weight: 600;
     text-decoration: none;
-    /* put transition on the original state */
-    transition: all 1s;
+
+    border:none;
+    cursor: pointer;
+    font-family: inherit;
+
+    transition: all 0.3s;
 }
 
 .btn--full:link,
@@ -204,4 +214,8 @@ strong {
 }
 .margin-bottom-md {
     margin-bottom: 4.8rem !important;
+}
+*:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.8rem #e67d2269;
 }
