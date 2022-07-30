@@ -7,6 +7,9 @@
 background-color: #fdf2e9;
 padding: 4.8rem 0 9.6rem 0;
 }
+
+
+
 .hero {
     max-width: 130rem;
     margin:0 auto; 
@@ -39,8 +42,7 @@ padding: 4.8rem 0 9.6rem 0;
     align-items: center;
     gap: 3.6rem;
     margin-top: 8rem;
-  };
-
+  }
 .deliverd-imgs{
     display: flex;
 }
@@ -102,6 +104,7 @@ padding: 4.8rem 0 9.6rem 0;
     background-color: #fdf2e9;
     height: 9.6rem;
     padding: 0 4.8rem;
+    position: relative;
 }
 .logo {
     height: 2.2rem;
@@ -143,7 +146,22 @@ padding: 4.8rem 0 9.6rem 0;
 }
 
 
+/* mobile menu */
+.btn-mobile-nav {
+ border: none;
+ background: none;
+ cursor: pointer;
+ display: none;
 
+}
+.icon-mobile-nav {
+  height:4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+.icon-mobile-nav[name='close-outline'] {
+  display: none;
+}
 /* *********** */
 /* SECTION HOW */
 /* *********** */
@@ -455,7 +473,6 @@ position: relative;
   .cta {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    /* background-color: #e67e22; */
     box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
     border-radius: 11px;
   
