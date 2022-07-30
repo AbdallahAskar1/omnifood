@@ -42,6 +42,7 @@ Primary :#e67e22
 }
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 body {
     font-family: 'Rubik' ,sans-serif;
