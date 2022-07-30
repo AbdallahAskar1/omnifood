@@ -9,9 +9,13 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/queries.css">
 
-    
+    <meta name="description" content="Omnifood is an AI-powered food subscription that will make you eat healthy again, 365 days per year. It's tailored to your personal tastes and nutritional needs">
+  
+    <link rel="mainfest" href="manifest.webmanifest" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./content//img/favicon-512.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./content/img/favicon-64.png" type="image/x-icon">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -63,8 +67,16 @@
                 </div>
             </div>
             <div class="hero-img-box">
-                <img src="content/img/hero.png" class="hero-img" alt="woman enjoying food, 
+              <picture>
+                <source srcset="content/img/hero.webp" type="image/webp">
+                <source srcset="content/img/hero-min.png" type="image/png">
+
+                <img src="content/img/hero-min.png" class="hero-img" alt="woman enjoying food, 
                 meals in storage container, abd food bowls ob a table">
+            
+              </picture>
+                <!-- <img src="content/img/hero-min.png" class="hero-img" alt="woman enjoying food, 
+                meals in storage container, abd food bowls ob a table"> -->
             </div>
         </div>
     </section>
